@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!--
+    Name: Terry Lawrence
+    Date Created: 6/12/2019
+    Most Recent Revision
+-->
+<html lang="en">
+    <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            
+        <title>Menu</title>
+        
+         <!-- Bootstrap style loading from their server-->
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+         <!--Google font family Mali-->
+         <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet"> 
+         <!--Css header and footer style-->
+         <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />.
+         <!--Link for house icon-->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         
+        <style>
+
+            a:link {
+                text-decoration: underline
+            }
+            a:visited {
+                color: #e4c
+            }
+            nav a:hover {
+                font-weight: bold;
+            }
+            nav .btn{
+                background-color: #ff8000;
+                color: black
+            }
+            table {
+                text-align: center;
+            }
+            #menus {
+                background-color: #ff8000;
+                text-align: center;
+            }
+            th {
+                font-size: 1.5em;
+            }
+            #drinks {
+                border: 1px dashed;
+                text-align: justify;
+            }
+            
+
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Backstreet BBQ House</h1>
+        </header>
+        <hr />
+
+        <nav class="nav nav-justified">
+            <p>
+                &nbsp;&nbsp;
+                <a href="index.html" class="btn"><i class="fa fa-fw fa-home"></i>Home</a>
+                <a href="menu.html" style="text-decoration:none;" class="btn">Menu</a>
+                <a href="contact.html" class="btn">Contact Us</a>
+            </p>
+        </nav>
+
+        <!--Warning for javascript-->
+        <noscript>
+            <h1 style="background-color: red; border-radius: 45px; padding: 5px 20px; text-align: center;">This site is best viewed with Javascript Enabled.</h1>
+        </noscript>
+
+        <!--Main Menu Items-->
+        <div class="container-fluid background" id="menus">
+        <hr /><br /><br />
+            <div class="row">
+                <div class="col-lg col-md">
+                    <p>
+                        <strong>Ribs</strong><br />
+                        Fan Favorite!<br />
+                        Lovely ribs smothered in our famous BBQ sauce.<br />
+                        Comes with two sides and a drink.<br />
+                        $11.95
+                    </p>
+                </div>
+                <div class="col-lg col-md">
+                    <p>
+                        <strong>Pulled Pork</strong><br />
+                        A Classic Item!<br />
+                        Amazing pulled pork smothered in our famous BBQ sauce.<br />
+                        Comes with two sides and a drink.<br />
+                        $9.95
+                    </p>
+                </div>
+                <div class="col-lg md">
+                    <p>
+                        <strong>Brisket</strong><br />
+                        House Favorite!<br />
+                        Tender smoked brisket smothered in our famous BBQ sauce.<br />
+                        Comes with two sides and a drink.<br />
+                        $11.95
+                    </p>
+                </div>
+            </div>
+
+            <!--Sides-->
+            <div class="row">
+                    <div class="col-lg col-md">
+                        <p>
+                            <strong>Cole Slaw</strong><br />
+                            Fresh cole slaw made in house three times a day.<br />
+                            Served as a side or can be purchased separately.<br />
+                            $2.95
+                        </p>
+                    </div>
+                    <div class="col-lg col-md">
+                        <p>
+                            <strong>Mac'N'Cheese</strong><br />
+                            Creamy mac and cheese made with real cheese.<br />
+                            Served as a side or can be purchased separately.<br />
+                            $2.95
+                        </p>
+                    </div>
+                    <div class="col-lg md">
+                        <p>
+                            <strong>Mashed Potatoes</strong><br />
+                            House Favorite!<br />
+                            Housemade mashed potatoes using real butter.<br />
+                            Served as a side or can be purchased separately.<br />
+                            $2.95
+                        </p>
+                    </div>
+                </div>
+
+        <!--menu using tables
+        <table align="center" width="80%">
+            <tr>
+                <th>Ribs</th>
+                <th>Pulled Pork</th>
+                <th>Brisket</th>
+            </tr>
+            <tr>
+                <td>
+                    Fan Favorite!<br />
+                    Lovely ribs smothered in our famous BBQ sauce.<br />
+                    Comes with two sides and a drink.<br />
+                    $11.95
+                </td>
+                <td>
+                    A Classic Item!<br />
+                    Amazing pulled pork smothered in our famous BBQ sauce.<br />
+                    Comes with two sides and a drink.<br />
+                    $9.95
+                </td>
+                <td>
+                    House Favorite!<br />
+                    Tender smoked brisket smothered in our famous BBQ sauce.<br />
+                    Comes with two sides and a drink.<br />
+                    $11.95
+                </td>
+            </tr>
+        </table>
+        <br /><br />
+        
+        <table align="center" width="80%">
+                <tr>
+                    <th>Cole Slaw</th>
+                    <th>Mac'N'Cheese</th>
+                    <th>Mashed Potatoes</th>
+                </tr>
+                <tr>
+                    <td>
+                        Fresh cole slaw made in house three times a day.<br />
+                        Served as a side or can be purchased separately.<br />
+                        $2.95
+                    </td>
+                    <td>
+                        Creamy mac and cheese made with real cheese.<br />
+                        Served as a side or can be purchased separately.<br />
+                        $2.95
+                    </td>
+                    <td>
+                        Housemade mashed potatoes using real butter.<br />
+                        Served as a side or can be purchased separately.<br />
+                        $2.95
+                    </td>
+                </tr>
+            </table>
+        <br /><br />
+        -->
+
+        <!--Beverages Table-->
+        <table align="center" width="30%" id="drinks">
+            <tr>
+                <th>Beverages<br /><br /></th>
+            </tr>
+            <tr>
+                <td>Root Beer<br /><br /></td>
+                <td>$3.00<br /><br /></td>
+            </tr>
+            <tr>
+                <td>Bottled Water<br /><br /></td>
+                <td>$1.25<br /><br /></td>
+            </tr>
+            <tr>
+                <td>Lemonade<br /><br /></td>
+                <td>$1.00<br /><br /></td>
+            </tr>
+            <tr>
+                <td>Iced Tea<br /><br /></td>
+                <td>$1.25<br /><br /></td>
+            </tr>
+        </table>
+        <br /><br /><hr />
+
+        </div>
+        
+        <footer>
+                <div>
+                    <p>
+                        7847 West Willow Rd, Virginia Beach, Virginia, 23456<br />
+                        757-555-5555
+                    </p>
+    
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+                </div>
+        </footer>
+
+
+
+    </body>
+</html>

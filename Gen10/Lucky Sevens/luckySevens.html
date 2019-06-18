@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+    Name: Terry Lawrence
+    Date Created: 6/15/2019
+    Most Recent Revision
+-->
+<html lang="en">
+    <head>
+
+        <title>Lucky Sevens</title>
+
+        <!-- Bootstrap style loading from their server-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!--Google font family Mali-->
+        <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet"> 
+
+        <style>
+
+            .error {
+                background-color: red;
+            }
+            header {
+                font-style: oblique;
+                font-family: Mali, Arial, Helvetica, sans-serif;
+            }
+            body {
+                text-align: center;
+            }
+            label {
+                font-weight: bold;
+            }
+            button {
+                margin: 10px 5px;
+                padding: 10px 25px;
+                font-size: 1.2em;
+                border-radius: 40px;
+                background-color: #558dd1;
+                border-color: #558dd1;
+                color: white;
+            }
+            button:hover {
+                background-color: aqua;
+                font-weight: bold;
+            }
+            table {
+                align: center;
+                text-align: left;
+                margin-right: auto;
+                margin-left: auto;
+                border: solid black;
+            }
+            thead tr {
+                background-color: grey;
+            }
+            tbody tr:nth-child(odd) {
+                background-color: lightgrey;  
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 5px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <br><br>
+        <header>
+            <h1>Lucky Sevens</h1>
+        </header>
+
+        <!--Initial starting bet-->
+        <div class="form-group">
+            <label for="bet">Starting Bet:</label>
+            <label>$</label>
+            <input id="bet" type="number" value="0.00" step=".01" min="0">
+        </div>
+        <button id="play" type="submit" onclick="verify();">Play</button>
+        <hr/>
+
+        <!--Game Results-->
+        <div id="results" style="display: none">
+            <h2>Results</h2>
+            <table>
+                <thead>
+                    <tr name="odd">
+                        <td>Starting Bet</td>
+                        <td>$<span id="resultBet"></span></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr name="even">
+                        <td>Total Rolls Before Going Broke</td>
+                        <td><span id="resultRollsBeforeBroke"></span></td>
+                    </tr>
+                    <tr name="odd">
+                        <td>Highest Amount Won</td>
+                        <td><span id="resultMaxMoney"></span></td>
+                    </tr>
+                    <tr name="even">
+                        <td>Roll Count At Highest Amount Won</td>
+                        <td><span id="resultRollAtMax"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--Replay Button-->
+            <button id="reset" type="submit" onclick="reset();">Reset</button>
+
+        </div>
+
+        <script type="text/javascript" src="luckySevens.js"></script>
+    </body>
+</html>
